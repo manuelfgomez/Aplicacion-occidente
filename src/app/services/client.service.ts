@@ -12,7 +12,7 @@ export class ClientService {
     this.headers = new HttpHeaders();
   }
 
-  getClient(nit:string = "800220154"): Observable<Cliente>{
+  getClient(nit:string): Observable<Cliente>{
     this.headers = this.headers.append('Content-Type', 'application/json');
     return this.http.get<Cliente>(environment.apiUrl+'?nit='+nit, {headers: this.headers});
   }

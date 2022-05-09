@@ -19,7 +19,7 @@ describe('AlertComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Debe crearse correctamente', () => {
     expect(component).toBeTruthy();
   });
 });

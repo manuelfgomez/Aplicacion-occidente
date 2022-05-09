@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CardComponent } from '../card/card.component';
 
 import { CardsComponent } from './cards.component';
 
@@ -8,7 +9,7 @@ describe('CardsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardsComponent ]
+      declarations: [ CardsComponent, CardComponent ]
     })
     .compileComponents();
   });
@@ -19,7 +20,7 @@ describe('CardsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Debe crearse correctamente', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Cliente } from 'src/app/models/cliente';
-import { ClientService } from 'src/app/services/client.service';
 
 @Component({
   selector: 'app-client',
@@ -8,22 +7,15 @@ import { ClientService } from 'src/app/services/client.service';
   styleUrls: ['./client.component.scss']
 })
 export class ClientComponent implements OnInit {
-  cliente:Cliente;
-  constructor(private clientService: ClientService) { 
+  @Input() cliente:Cliente;
+  constructor() { 
     this.cliente = <Cliente>{};
   }
 
   ngOnInit(): void {
-    this.getClient();
+    
   }
 
-  getClient(): void{
-    this.clientService.getClient().subscribe({
-      next: (response: any) => {
-        this.cliente = response;
-      },
-      error: (err) => console.log(err),
-    })
-  }
+  
 
 }
