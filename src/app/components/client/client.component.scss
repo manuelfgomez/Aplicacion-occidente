@@ -1,0 +1,41 @@
+@import "../../../colors";
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo{
+    text-align: center;
+    color: $color-secundary;
+    font-size: 24px;
+}
+
+.contenedor{
+    margin: 16px 0px;
+}
+
+.nit{
+    text-align: center;
+    color: $color-tertiary;
+}
+
+.categoria{
+    width: 250px;
+    text-align: center;
+}
+
+.label{
+    color: $color-secundary;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.mr-5{
+    margin-right: 5px;
+}

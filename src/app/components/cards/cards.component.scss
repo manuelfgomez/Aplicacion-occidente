@@ -1,0 +1,18 @@
+.cards{
+    margin: 16px auto;
+    .col{
+        padding: 0px;
+    }
+}
+
+@media (min-width: 320px){
+    .cards{
+        width: 280px;
+    }
+}
+
+@media (min-width: 768px){
+    .cards{
+        width: 430px;
+    }
+}

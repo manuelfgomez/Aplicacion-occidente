@@ -1,0 +1,13 @@
+.logo{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+@media (max-width: 991px) {
+    .logo{
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+}

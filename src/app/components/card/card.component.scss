@@ -1,0 +1,69 @@
+@import "../../../colors";
+
+.card{
+    &:hover{
+        border: 2px solid rgba(0,0,0,.125);
+    }
+}
+
+.card-title{
+    text-align: center;
+    color: $color-secundary;
+}
+
+.card-img-top{
+    margin: auto;
+}
+
+.card-body{
+    padding: 0px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(0,0,0,.08);
+        .btn-continuar{
+            color: $color-primary;
+            font-weight: bold;
+        }
+    }
+}
+
+.btn-continuar{
+    border: none;
+    color: $color-tertiary;
+    background: transparent;
+    font-size: 14px;
+}
+
+@media (min-width: 320px){
+    .card{
+        width: 125px;
+        height: 125px;
+    }
+    .card-title, .btn-continuar{
+        font-size: 12px;
+    }
+    .card-img-top{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 768px){
+    .card{
+        width: 180px;
+        height: 180px;
+    }
+    .card-title{
+        font-size: 14px;
+    }
+    .card-img-top{
+        width: 70px;
+        height: 70px;
+    }
+}
